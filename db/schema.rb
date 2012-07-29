@@ -11,7 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120729033143) do
+ActiveRecord::Schema.define(:version => 20120729213328) do
+
+  create_table "activities", :force => true do |t|
+    t.string   "type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "anaerobics", :force => true do |t|
+    t.integer  "repetitions"
+    t.integer  "sets"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "exercises", :force => true do |t|
+    t.string   "name"
+    t.string   "type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "muscle_groups", :force => true do |t|
     t.string   "name"
@@ -24,6 +44,12 @@ ActiveRecord::Schema.define(:version => 20120729033143) do
     t.string   "latin_name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "weights", :force => true do |t|
+    t.decimal  "amount",     :precision => 10, :scale => 0
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
   end
 
 end
