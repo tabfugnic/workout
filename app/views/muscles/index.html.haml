@@ -1,0 +1,21 @@
+%h1 Listing muscles
+
+%table
+  %tr
+    %th Name
+    %th Latin name
+    %th
+    %th
+    %th
+
+  - @muscles.each do |muscle|
+    %tr
+      %td= muscle.name
+      %td= muscle.latin_name
+      %td= link_to 'Show', muscle
+      %td= link_to 'Edit', edit_muscle_path(muscle)
+      %td= link_to 'Destroy', muscle, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Muscle', new_muscle_path
