@@ -1,5 +1,6 @@
 require 'spec_helper'
 
 describe ExerciseMuscles do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:exercise_muscles) { mock_model ExerciseMuscles }
+  it { exercise_muscles.should be_valid }
 end
