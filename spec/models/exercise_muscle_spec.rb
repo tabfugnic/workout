@@ -8,6 +8,14 @@ describe ExerciseMuscle do
     before :each do
       @exercise_muscle = ExerciseMuscle.new
     end
+    it "is valid when value is between 1..10" do
+      @exercise_muscle.value = 1 + rand(10)
+      @exercise_muscle.save.should be_true
+    end
+    it "is not valid when value is not between 1..10" do
+      @exercise_muscle.value = 11
+      @exercise_muscle.save.should_not be_true
+    end
   end
 
 end
