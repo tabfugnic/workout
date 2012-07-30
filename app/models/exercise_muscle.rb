@@ -3,7 +3,7 @@ class ExerciseMuscle < ActiveRecord::Base
   belongs_to :muscle
   belongs_to :exercise
   
-  # Require field value
+  # Require field value and value be between 1 and 10
+  validates :value, :numericality => { :greater_than_or_equal_to => 0, :less_than_or_equal_to => 10}, :presence => true
 
-  # Require value be between 1 and 10
 end
