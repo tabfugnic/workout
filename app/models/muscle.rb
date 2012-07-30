@@ -3,5 +3,7 @@ class Muscle < ActiveRecord::Base
   has_many :exercises, :through => :exercise_muscles
   belongs_to :muscle_groups
 
-  # Require field name
+  # Require field name and uniqueness
+  validates :name, :presence => true, :uniqueness => true
+
 end
