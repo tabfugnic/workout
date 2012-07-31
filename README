@@ -1,0 +1,11 @@
+== Workout
+
+=== Summary
+
+Workout helps keep track of the exercises performed.  It can keep track of the sets and reps or the the time, distance and speed of a cardio workout. The goal is to keep track of the areas of the body being worked on in the hopes of identifying what areas are being avoided or overworked.
+
+=== Flow
+
+User performs activity, with reps, sets, time, distance, duration.  Activity is associated to an exercise. The exercise has weight distribution and areas of emphasis on the body.  For example, Eric does 3 sets of push ups at 10 reps each. The push up works pecs and triceps primarily, but also works abdominals and glutes as a secondary or stabilizer. The secondary are given a lower rating where the primary are given a high rating. Thus it is added to a score allowing it to average the work out over a period of time and show what muscles over that time were most emphasized and what areas are more deficition.
+
+
