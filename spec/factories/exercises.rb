@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :exercise do
-    name "MyString"
-    type ""
+    sequence :name { |n| "exercise#{1}" }
+    type ["Aerobic", "Anaerobic"].sample
   end
 end
