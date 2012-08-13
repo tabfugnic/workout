@@ -11,12 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120729222210) do
+ActiveRecord::Schema.define(:version => 20120806062736) do
 
   create_table "activities", :force => true do |t|
     t.string   "type"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "repetitions"
+    t.float    "time"
+    t.float    "distance"
+    t.float    "speed"
+    t.integer  "sets"
   end
 
   create_table "anaerobics", :force => true do |t|
