@@ -1,5 +1,7 @@
 require 'spec_helper'
 
 describe Activities do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:activity) { mock_model Activity }
+  it { activity.should be_valid }
+
 end

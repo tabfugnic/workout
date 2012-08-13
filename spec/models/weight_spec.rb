@@ -1,5 +1,7 @@
 require 'spec_helper'
 
 describe Weight do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:exercise) { mock_model Exercise }
+  it { exercise.should be_valid }
+
 end
