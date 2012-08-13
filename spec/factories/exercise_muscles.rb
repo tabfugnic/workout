@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :exercise_muscle, :class => 'ExerciseMuscle' do
-    muscle {|a| a.association(:muscle)}
-    exercise {|a| a.association(:exercise)
-    value 1 + rand(10)
+    muscle {|a| a.association(:muscle) }
+    exercise {|a| a.association(:exercise) }
+    value rand(2)
   end
 end
