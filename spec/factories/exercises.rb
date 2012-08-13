@@ -3,7 +3,7 @@
 FactoryGirl.define do
   factory :exercise do
     muscle
-    sequence :name { |n| "exercise#{1}" }
+    sequence(:name) { |n| "Exercise #{n}" }
     type ["Aerobic", "Anaerobic"].sample
   end
 end
