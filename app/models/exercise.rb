@@ -7,4 +7,14 @@ class Exercise < ActiveRecord::Base
   #Require field name and uniqueness
   validates :name, :presence => true, :uniqueness => true
   validates :type, :presence => true
+
+  #Primary Muscles
+  def primary_muscles
+
+  end
+  #Secondary Muscles
+  def secondary_muscles
+
+  end
+
 end
