@@ -1,5 +1,5 @@
 class ExerciseMuscle < ActiveRecord::Base
-  attr_accessible :value
+  attr_accessible :value, :muscle
   belongs_to :muscle
   belongs_to :exercise
   
