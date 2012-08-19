@@ -1,11 +1,8 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-print "Primary Exercise Muscles"
+
+p "Primary Exercise Muscles"
 muscles = Muscle.create([{name:'Trapezius'}, {name: 'Levator Scapulae'}, {name: 'Rhomboids'},
                          {name:'Pectorails Minor'}, {name:'Serratus Anterior'}, {name: 'Sternocleidomastoid'},
                          {name:'Pectorails Major'}, {name: 'Latissimus Dorsi'}, {name: 'Deltoids'},
@@ -21,5 +18,10 @@ muscles = Muscle.create([{name:'Trapezius'}, {name: 'Levator Scapulae'}, {name: 
                          {name: 'Vastus Lateralis'}, {name: 'Vastus Intermedius'}, {name: 'Vastus Medialis'},
                          {name: 'Popliteus'}])
 
-pushup = Exercise.create({name: "pushup" })
+p "Pushup"
+pushup = Exercise.create({name: "pushup", type: "Anaerobic" })
 
+pushup.exercise_muscles.create!([{muscle: Muscle.find_by_name("Pectorails Minor"), value: 1}, 
+                                 {muscle: Muscle.find_by_name("Pectorails Major"), value: 1},
+                                 {muscle: Muscle.find_by_name("Deltoids"), value: 1},
+                                 {muscle: Muscle.find_by_name("Triceps Brachil"), value: 1}])
