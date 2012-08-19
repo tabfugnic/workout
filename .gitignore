@@ -16,3 +16,6 @@
 
 # Ignore weird emacs files
 *~
+
+# Ignore Mac files
+*.DS_Store
