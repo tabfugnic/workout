@@ -1,5 +1,5 @@
 class Muscle < ActiveRecord::Base
-  attr_accessible :latin_name, :name
+  attr_accessible :nickname, :name
   has_many :exercise_muscles
   has_many :exercises, :through => :exercise_muscles
   belongs_to :muscle_group
