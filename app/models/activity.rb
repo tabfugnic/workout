@@ -1,6 +1,6 @@
-class Activities < ActiveRecord::Base
+class Activity < ActiveRecord::Base
   attr_accessible :type
-  has_many :exercises
+  belongs_to :exercise
 
 
 end
