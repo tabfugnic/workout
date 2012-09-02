@@ -24,4 +24,10 @@ pushup = Exercise.create({name: "pushup", type: "Anaerobic" })
 pushup.exercise_muscles.create!([{muscle: Muscle.find_by_name("Pectorails Minor"), value: 1}, 
                                  {muscle: Muscle.find_by_name("Pectorails Major"), value: 1},
                                  {muscle: Muscle.find_by_name("Deltoids"), value: 1},
-                                 {muscle: Muscle.find_by_name("Triceps Brachil"), value: 1}])
+                                 {muscle: Muscle.find_by_name("Triceps Brachil"), value: 1},
+                                 {muscle: Muscle.find_by_name("Rhomboids"), value: 2 },
+                                 {muscle: Muscle.find_by_name("Erector Spinae"), value: 2 },
+                                # {muscle: Muscle.find_by_name("Rotator Cuff"), value: 2 },
+                                 {muscle: Muscle.find_by_name("Rhomboids"), value: 2 },
+                                 {muscle: Muscle.find
+                                ])
