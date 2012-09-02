@@ -16,10 +16,22 @@ muscles = Muscle.create([{name:'Trapezius'}, {name: 'Levator Scapulae'}, {name: 
                          {name: 'Extensor Digitorum Communis'}, {name: 'Flexor Digitorum Superficialis'},
                          {name: 'Extensor Pollicis Longus'}, {name: 'Flexor Pollicis Longus'},
                          {name: 'Vastus Lateralis'}, {name: 'Vastus Intermedius'}, {name: 'Vastus Medialis'},
-                         {name: 'Popliteus'}])
+                         {name: 'Popliteus'}, {name: 'Iliopsoas'}, {name: 'Gluteus Medius'},
+                         {name: 'Gluteus Maximus'}, {name: 'Piriformis'}, {name: 'Pectineus'},
+                         {name: 'Sartorius'}, {name: 'Sartorius'}, {name: 'Rectus Femoris'},
+                         {name: 'Tensor Fasciae Latae'}, {name: 'Biceps Femoris'}, {name: 'Semitendinosus' }
+                         {name: 'Semimembranosus' }, {name: 'Adductor Brevis' }, {name: 'Adductor Longus' },
+                         {name: 'Adductor Magnus' }, {name: 'Gracilis' }, {name: 'Gastrocnemius' },
+                         {name: 'Soleus' }, {name: 'Tibialis Posterior' }, {name: 'Flexor Digitorum Longus' }
+                         {name: 'Flexor Hallucis Longus' }, {name: 'Peroneus  Longus' },
+                         {name: 'Peroneal Brevis' }, {name: 'Tibialis Anterior' }, 
+                         {name: 'Extensor Digitorum Longus' }, {name: 'Erector Spinae' }, {name: 'Multifidus' }
+                         {name: 'Rectus Abdominus' }, {name: 'Transversus Abdominus' }, 
+                         {name: 'Internal Obliques' }, {name: 'External Obliques' },{name: 'Splenius' }
+                         {name: 'Quadratus Lumborum' }])
 
 p "Pushup"
-pushup = Exercise.create({name: "pushup", type: "Anaerobic" })
+pushup = Exercise.create({name: "pushup"})
 
 pushup.exercise_muscles.create!([{muscle: Muscle.find_by_name("Pectorails Minor"), value: 1}, 
                                  {muscle: Muscle.find_by_name("Pectorails Major"), value: 1},
