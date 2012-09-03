@@ -7,4 +7,8 @@ class Muscle < ActiveRecord::Base
   # Require field name and uniqueness
   validates :name, :presence => true, :uniqueness => true
 
+  def to_s
+    name
+  end
+  
 end
