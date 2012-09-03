@@ -19,15 +19,15 @@ muscles = Muscle.create([{name:'Trapezius'}, {name: 'Levator Scapulae'}, {name: 
                          {name: 'Popliteus'}, {name: 'Iliopsoas'}, {name: 'Gluteus Medius'},
                          {name: 'Gluteus Maximus'}, {name: 'Piriformis'}, {name: 'Pectineus'},
                          {name: 'Sartorius'}, {name: 'Sartorius'}, {name: 'Rectus Femoris'},
-                         {name: 'Tensor Fasciae Latae'}, {name: 'Biceps Femoris'}, {name: 'Semitendinosus' }
+                         {name: 'Tensor Fasciae Latae'}, {name: 'Biceps Femoris'}, {name: 'Semitendinosus' },
                          {name: 'Semimembranosus' }, {name: 'Adductor Brevis' }, {name: 'Adductor Longus' },
                          {name: 'Adductor Magnus' }, {name: 'Gracilis' }, {name: 'Gastrocnemius' },
-                         {name: 'Soleus' }, {name: 'Tibialis Posterior' }, {name: 'Flexor Digitorum Longus' }
+                         {name: 'Soleus' }, {name: 'Tibialis Posterior' }, {name: 'Flexor Digitorum Longus' },
                          {name: 'Flexor Hallucis Longus' }, {name: 'Peroneus  Longus' },
-                         {name: 'Peroneal Brevis' }, {name: 'Tibialis Anterior' }, 
-                         {name: 'Extensor Digitorum Longus' }, {name: 'Erector Spinae' }, {name: 'Multifidus' }
+                         {name: 'Peroneal Brevis' }, {name: 'Tibialis Anterior' }, {name: 'Splenius' },
+                         {name: 'Extensor Digitorum Longus' }, {name: 'Erector Spinae' }, {name: 'Multifidus' },
                          {name: 'Rectus Abdominus' }, {name: 'Transversus Abdominus' }, 
-                         {name: 'Internal Obliques' }, {name: 'External Obliques' },{name: 'Splenius' }
+                         {name: 'Internal Obliques' }, {name: 'External Obliques' }, 
                          {name: 'Quadratus Lumborum' }])
 
 p "Pushup"
@@ -41,5 +41,8 @@ pushup.exercise_muscles.create!([{muscle: Muscle.find_by_name("Pectorails Minor"
                                  {muscle: Muscle.find_by_name("Erector Spinae"), value: 2 },
                                 # {muscle: Muscle.find_by_name("Rotator Cuff"), value: 2 },
                                  {muscle: Muscle.find_by_name("Rhomboids"), value: 2 },
-                                 {muscle: Muscle.find
+                                 {muscle: Muscle.find_by_name("Rectus Abdominus"), value: 2 },
+                                 {muscle: Muscle.find_by_name("Transverse Abdominus"), value: 2 },
+                                 {muscle: Muscle.find_by_name("Gluteus Maximus"), value: 2},
+                                # {muscle: Muscle.find_by_name("Quadriceps"), value: 2},
                                 ])
